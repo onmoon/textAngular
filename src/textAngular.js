@@ -579,6 +579,7 @@
             _toolbars.focus();
           };
           scope.displayElements.html.on('focus', _focusin);
+          scope.displayElements.text.on('mouseup', _focusin);
           scope.displayElements.text.on('focus', _focusin);
           _focusout = function(e){
             // if we are NOT runnig an action and have NOT focussed again on the text etc then fire the blur events
